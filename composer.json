@@ -1,18 +1,17 @@
 {
-    "name": "prasad/php",
+    "name": "prasad/greetings",
     "description": "Hello World",
     "type": "project",
     "autoload": {
-        "psr-4": {
-            "Prasad\\Php\\": "src/"
-        },
-        "classname": {
-          "PHP_Timer": "src/"
+        "psr-0": {
+            "HelloWorld": "src/"
         }
     },
     "minimum-stability": "dev",
     "require": {
-        "php": ">=7.4.0",
-        "phpunit/php-timer": "^5.0"
+        "php": ">=7.4.0"
+    },
+    "scripts": {
+        "test": "php tests/test.php"
     }
 }
