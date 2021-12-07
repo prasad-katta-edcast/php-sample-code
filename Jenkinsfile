@@ -9,7 +9,7 @@ pipeline {
                 sh 'composer -V'
                 sh 'composer install'
                 sh 'cp -v $WORKSPACE/src/HelloWorld/Greetings.php /var/www/html/'
-                systemctl restart httpd
+                sh 'systemctl restart httpd'
             }
         }
     }
