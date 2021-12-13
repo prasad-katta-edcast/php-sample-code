@@ -3,6 +3,8 @@ namespace HelloWorld;
 
 class Greetings {
   public static function sayHelloWorld() {
-    return "Hello World\n";
+    return "Hello PHP World\n";
+     
   }
 }?>
+
